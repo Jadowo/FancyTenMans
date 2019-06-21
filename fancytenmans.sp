@@ -60,14 +60,15 @@ public Action Command_ExoBoots(int client, int args){
 		valid_team = true;
 		ExoBootsToggle = StringToInt(teamnum);
 		switch(ExoBootsToggle){
-			case 0: { ReplyToCommand(client, XG_PREFIX_CHAT..."ExoBoots Off!"); }
-			case 1: { ReplyToCommand(client, XG_PREFIX_CHAT..."ExoBoots CT Only!"); }
-			case 2: { ReplyToCommand(client, XG_PREFIX_CHAT..."ExoBoots T Only!"); }
-			case 3: { ReplyToCommand(client, XG_PREFIX_CHAT..."ExoBoots On!"); }
+			case 0: { PrintToChatAll(XG_PREFIX_CHAT..."ExoBoots Off!"); }
+			case 1: { PrintToChatAll(XG_PREFIX_CHAT..."ExoBoots CT Only!"); }
+			case 2: { PrintToChatAll(XG_PREFIX_CHAT..."ExoBoots T Only!"); }
+			case 3: { PrintToChatAll(XG_PREFIX_CHAT..."ExoBoots On!"); }
 		}
 	}
 	if(!valid_team){
 		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."Usage: sm_exoboots <0-3>");
+		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."0 = None 1 = CT 2 = T 3 = Both");
 		return Plugin_Handled;
 	}
 	return Plugin_Handled;
@@ -81,14 +82,15 @@ public Action Command_BumpMine(int client, int args){
 		valid_team = true;
 		BumpMineToggle = StringToInt(teamnum);
 		switch(BumpMineToggle){
-			case 0: { ReplyToCommand(client, XG_PREFIX_CHAT..."BumpMine Off!"); }
-			case 1: { ReplyToCommand(client, XG_PREFIX_CHAT..."BumpMine CT Only!"); }
-			case 2: { ReplyToCommand(client, XG_PREFIX_CHAT..."BumpMine T Only!"); }
-			case 3: { ReplyToCommand(client, XG_PREFIX_CHAT..."BumpMine On!"); }
+			case 0: { PrintToChatAll(XG_PREFIX_CHAT..."BumpMine Off!"); }
+			case 1: { PrintToChatAll(XG_PREFIX_CHAT..."BumpMine CT Only!"); }
+			case 2: { PrintToChatAll(XG_PREFIX_CHAT..."BumpMine T Only!"); }
+			case 3: { PrintToChatAll(XG_PREFIX_CHAT..."BumpMine On!"); }
 		}
 	}
 	if(!valid_team){
 		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."Usage: sm_bumpmine <0-3>");
+		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."0 = None 1 = CT 2 = T 3 = Both");
 		return Plugin_Handled;
 	}
 	return Plugin_Handled;
@@ -102,14 +104,15 @@ public Action Command_Shields(int client, int args){
 		valid_team = true;
 		ShieldsToggle = StringToInt(teamnum);
 		switch(ShieldsToggle){
-			case 0: { ReplyToCommand(client, XG_PREFIX_CHAT..."Shields Off!"); }
-			case 1: { ReplyToCommand(client, XG_PREFIX_CHAT..."Shields CT Only!"); }
-			case 2: { ReplyToCommand(client, XG_PREFIX_CHAT..."Shields T Only!"); }
-			case 3: { ReplyToCommand(client, XG_PREFIX_CHAT..."Shields On!"); }
+			case 0: { PrintToChatAll(XG_PREFIX_CHAT..."Shields Off!"); }
+			case 1: { PrintToChatAll(XG_PREFIX_CHAT..."Shields CT Only!"); }
+			case 2: { PrintToChatAll(XG_PREFIX_CHAT..."Shields T Only!"); }
+			case 3: { PrintToChatAll(XG_PREFIX_CHAT..."Shields On!"); }
 		}
 	}
 	if(!valid_team){
 		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."Usage: sm_shield <0-3>");
+		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."0 = None 1 = CT 2 = T 3 = Both");
 		return Plugin_Handled;
 	}
 	return Plugin_Handled;
@@ -123,14 +126,15 @@ public Action Command_BreachCharge(int client, int args){
 		valid_team = true;
 		BreachChargeToggle = StringToInt(teamnum);
 		switch(BreachChargeToggle){
-			case 0: { ReplyToCommand(client, XG_PREFIX_CHAT..."BreachCharge Off!"); }
-			case 1: { ReplyToCommand(client, XG_PREFIX_CHAT..."BreachCharge CT Only!"); }
-			case 2: { ReplyToCommand(client, XG_PREFIX_CHAT..."BreachCharge T Only!"); }
-			case 3: { ReplyToCommand(client, XG_PREFIX_CHAT..."BreachCharge On!"); }
+			case 0: { PrintToChatAll(XG_PREFIX_CHAT..."BreachCharge Off!"); }
+			case 1: { PrintToChatAll(XG_PREFIX_CHAT..."BreachCharge CT Only!"); }
+			case 2: { PrintToChatAll(XG_PREFIX_CHAT..."BreachCharge T Only!"); }
+			case 3: { PrintToChatAll(XG_PREFIX_CHAT..."BreachCharge On!"); }
 		}
 	}
 	if(!valid_team){
 		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."Usage: sm_breachcharge <0-3>");
+		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."0 = None 1 = CT 2 = T 3 = Both");
 		return Plugin_Handled;
 	}
 	return Plugin_Handled;
@@ -144,14 +148,15 @@ public Action Command_Medishot(int client, int args){
 		valid_team = true;
 		MediShotToggle = StringToInt(teamnum);
 		switch(MediShotToggle){
-			case 0: { ReplyToCommand(client, XG_PREFIX_CHAT..."MediShot Off!"); }
-			case 1: { ReplyToCommand(client, XG_PREFIX_CHAT..."MediShot CT Only!"); }
-			case 2: { ReplyToCommand(client, XG_PREFIX_CHAT..."MediShot T Only!"); }
-			case 3: { ReplyToCommand(client, XG_PREFIX_CHAT..."MediShot On!"); }
+			case 0: { PrintToChatAll(XG_PREFIX_CHAT..."MediShot Off!"); }
+			case 1: { PrintToChatAll(XG_PREFIX_CHAT..."MediShot CT Only!"); }
+			case 2: { PrintToChatAll(XG_PREFIX_CHAT..."MediShot T Only!"); }
+			case 3: { PrintToChatAll(XG_PREFIX_CHAT..."MediShot On!"); }
 		}
 	}
 	if(!valid_team){
 		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."Usage: sm_medishot <0-3>");
+		ReplyToCommand(client, XG_PREFIX_CHAT_WARN..."0 = None 1 = CT 2 = T 3 = Both");
 		return Plugin_Handled;
 	}
 	return Plugin_Handled;
